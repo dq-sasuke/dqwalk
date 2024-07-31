@@ -1,0 +1,1007 @@
+@charset "UTF-8";
+
+/* 共通部分
+----------------------*/
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+
+
+/* レイアウト */
+.align-center {
+  text-align: center;
+}
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+/* 見出し */
+.font-english {
+  font-family:'Philosopher', sans-serif;
+  font-weight: normal;
+}
+.page-title,
+.heading-large,
+.heading-medium {
+  font-size: 3rem;
+  text-align: center;
+}
+.page-title {
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+.heading-large {
+  margin-bottom: 1rem;
+}
+
+/* ボタン */
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #0bd;
+  color: #fff;
+  border-radius: 8px;
+  padding: .75rem 1.5rem;
+  transition: .5s;
+}
+.btn:hover {
+  background-color: #0090aa;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+/* ヘッダー
+------------------*/
+.page-header {
+  padding-top: .5rem;
+}
+.logo {
+  width:70px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 2rem;
+  list-style: none;
+}
+.main-nav a {
+  color: #432;
+}
+.main-nav a:hover {
+  color: #0bd;
+}
+/* 背景 */
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 800px;
+}
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 528px;
+  margin-bottom: 4rem;
+}
+
+.cover-home {
+  background-image: url(../images/smartphone-top-home.svg);
+}
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 4rem;
+}
+.about p {
+  margin-bottom: 3rem;
+}
+
+/* NEWS
+-----------------------*/
+.cover-news {
+  background-image: url(../images/desktop-top.png);
+}
+
+/* 記事部分 */
+.post-title {
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+}
+.post-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.post-cat {
+  display: flex;
+  gap: .5rem;
+  list-style: none;
+}
+.post-cat a{
+  color: #432;
+  background-color: #faf7f0;
+  border-radius: 8px;
+  font-size: .875rem;
+  padding: .5rem .75rem;
+}
+.post-cat a:hover {
+  background-color: #c9c2bc;
+}
+.post-date {
+  font-size: .875rem;
+}
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+.post p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+/* サイドバー */
+.side-menu {
+  list-style: none;
+  text-align: center;
+}
+.side-menu li {
+  border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+  color: #432;
+  display: block;
+  padding: 1rem;
+}
+.side-menu a:hover {
+  color: #0bd;
+}
+.archives {
+  margin-top: 2rem;
+}
+/* MENU
+-----------------------*/
+.cover-menu {
+  background-image: url(../images/smartphone-top-heruku.png);
+}
+.grid1 {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-top: 5rem ;
+
+}
+
+.grid2 {
+  display: grid;
+  gap: 0.4rem 0.3rem;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+.item {
+  transition: .5s;
+}
+.item:hover {
+  scale: 1.05;
+}
+.item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.item p {
+  font-size: .875rem;
+  color: #432
+}
+
+/* MONSTER
+--------------------:--*/
+.cover-monster {
+  background-image: url(../images/smartphone-top-amura.png);
+}
+.main-title {
+  font-size: 2rem;
+}
+.rank {
+  font-size: 1.3rem;
+  margin: 0.2rem 0 0.7rem;
+}
+.grid2 {
+  display: grid;
+  gap: 0.4rem 0.3rem;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+/* MONSTER EVALUATION
+-----------------------*/
+.cover-monster-personal {
+  background-image: url(../images/smartphone-top-sukadora.png);
+}
+.monster-name {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.monster-name h2 {
+  margin-left: .9rem;
+}
+.monster-name img {
+  height: 5rem;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.sub-title {
+  font-size: 1.3rem;
+  margin: .5rem 0;
+}
+.subsub-title {
+  font-size:1.15rem;
+  margin: .5rem 0;
+}
+.sub-title p {
+  font-size: 1.1rem;
+}
+.attribute img{
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: .3rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.attribute-table {
+  border:1px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.attribute-table th {
+  border:1px solid #333;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .4rem .2rem .4rem .2rem;
+}
+.attribute-table td {
+  border:1px solid #333;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 .5rem;
+  text-align: center;
+}
+.status img{
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: .3rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.status-table {
+  border:1px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.status-table th {
+  border:1px solid #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: .2rem .5rem;;
+}
+.status-table td {
+  border:1px solid #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 .5rem;
+  text-align: center;
+}
+.total-table {
+  border:1px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.total-table th {
+  border:1px solid #333;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding:.3rem;
+}
+.total-table td {
+  border:1px solid #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 .5rem;
+}
+
+.frame img {
+  height: 5.3rem;
+  width: 5.3rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: .2rem;
+}
+.skill img {
+  height: 4rem;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.attention {
+  font-weight: bold;
+  font-size: .92rem;
+}
+
+/* BLOG
+-----------------------*/
+.cover-blog {
+  background-image: url(../images/smartphone-top-dorago.png);
+}
+.list {
+  font-size:1.3rem;
+  margin-bottom: .2rem;
+}
+/* SPEED
+-----------------------*/
+.cover-speed {
+  background-image: url(../images/smartphone-top-zyami.png);
+}
+.column h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: .8rem;
+  margin-bottom: .8rem;
+}
+.column {
+  margin-bottom: 5rem;
+}
+.speed {
+  border:1px solid #333;
+  border-collapse: collapse;
+  margin: auto;
+}
+.speed th {
+  border:1px solid #333;
+  width: 10rem;
+  font-size:1.2rem;
+  font-weight: 700;
+}
+.speed td {
+  border:1px solid #333;
+  text-align:center;
+  font-size: 1.1rem;
+  font-weight:600;
+  height: 10rem;
+  width: 10rem;
+  align: middle;
+}
+.speed img {
+  height: 9rem;
+  width: 9rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top:.5rem;
+  transition: .5s;
+}
+.speed img:hover {
+  scale:1.05;
+}
+
+/* CONTACT
+-----------------------*/
+.cover-contact {
+  background-image: url(../images/desktop-top.png);
+}
+
+/* 店舗情報 */
+.location {
+  margin-bottom: 3.5rem;
+}
+.location-info {
+  margin-bottom: 2rem;
+}
+.location-info .info {
+  padding: 0;
+}
+/* フッター
+-----------------------*/
+.page-footer {
+  background-image: url(../images/smartphone-footer.png);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 0;
+  margin-top: 5rem;
+  position: relative;
+}
+.info {
+  width:100%;
+  max-width:544px;
+  margin:auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+  margin-bottom: 6rem;
+}
+.info th,.info td {
+  border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+ .twitter-follow-button{
+  margin-top:.5rem;
+}
+.copyright {
+  width: 100%;
+  background-color: #432;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+/* お問い合わせ */
+.email {
+  max-width: 916px;
+  background-color: #faf7f0;
+  border-radius: 48px;
+  padding: 1.5rem 2.5rem 2.5rem;
+  margin: 0 auto 2rem;
+}
+.email p {
+  margin: 1rem 0 2rem;
+}
+/* サブログ画面
+----------------------- */
+.cover-sublog {
+  background-image: url(../images/smartphone-top-goremu.png);
+}
+.sublog {
+  text-align: center;
+  background-color: #faf7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+.sublog img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.register,.login{
+  background-color: #e7d0a9;
+}
+
+.register:hover,.login:hover {
+  background-color: #e7d0a9;
+  scale: 1.05;
+}
+/* 登録画面
+----------------------- */
+.subscribe {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: #faf7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+.subscribe h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.type input {
+  background-color: #fff;
+  width: 75%;
+  margin: 1.3rem;
+  padding: .3rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.submit input {
+  background-color: #e7d0a9;
+  color: #fff;
+  padding: .5rem;
+  border-radius: 10px;
+  width: 33%;
+  margin-right: .5rem;
+  font-size: 1.4rem;
+}
+.submit input:hover {
+  background-color: #b4ada9;
+}
+/* EP6登録
+----------------------- */
+.ep6Total {
+  text-align: center;
+}
+.ep6Total h3 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+.ep6Total h4 {
+  font-size: 1.5rem;
+}
+.top-button {
+  display: flex;
+}
+.bottom-button {
+  margin-bottom: 1.5rem;
+}
+.top-main .btn {
+  width: 50%;
+  margin: .5rem;
+  background-color: #e7d0a9;
+  font-size: 1.25rem;
+}
+.ep6Subscribe-table {
+  border:1px solid #333;
+  border-collapse: collapse;
+  margin:auto;
+}
+.ep6Subscribe-table .btn {
+  background-color: #e7d0a9;
+  border-radius: 10px;
+  height: 4rem;
+  align: middle;
+  transition: .5s;
+}
+.ep6Subscribe-table .btn:hover {
+  scale: 1.05;
+}
+.ep6Subscribe-table button {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.ep6Subscribe-table td {
+  border:1px solid #333;
+  text-align:center;
+  font-size: .5rem;
+  padding: 0 .5rem;
+}
+.ep6Subscribe-table img {
+  height: 9rem;
+  width: 9rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top:.5rem;
+}
+/* スキル選択
+----------------------- */
+.choice {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #faf7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.choice h3 {
+  font-size: 2rem;
+}
+.allChoice h4 {
+  font-size: 1.7rem;
+}
+.partChoice {
+  margin: 1.7rem 0;
+}
+.partChoice select {
+  background-color: #fff;
+  width: 70%;
+  margin: 1.3rem;
+  padding: .3rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.input {
+  margin: auto;
+}
+.input input {
+  width: 80%;
+  font-size: 1.8rem;
+  transition: .5s;
+}
+.input input:hover {
+  scale: 1.05;
+}
+/* EP6登録完了
+----------------------- */
+.complete {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #faf7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+.complete h3 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.top-main .allRegister {
+  width: 80%;
+  transition: .5s;
+}
+.top-main .allRegister:hover {
+  scale: 1.05;
+}
+/* 登録一覧
+----------------------- */
+
+.top-registerAll h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.top-registerAll .btn {
+  background-color: #e7d0a9;
+  border-radius: 10px;
+  align: middle;
+  transition: .5s;
+  font-size: 1rem;
+  padding: .6rem;
+}
+.btnUnity {
+  text-align: center;
+  margin: 2rem 0;
+}
+.table-registerAll {
+  border:1px solid #333;
+  border-collapse: collapse;
+  margin:auto;
+  font-size: .6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.table-registerAll th {
+  border:1px solid #333;
+}
+.table-registerAll td {
+  border:1px solid #333;
+}
+.table-registerAll form {
+  background-color: #e7d0a9;
+  border-radius: 5px;
+  align: middle;
+  font-size: .8rem;
+  padding: .1rem;
+  margin: .1rem;
+  transtion: .5s;
+}
+.table-registerAll form:hover {
+  background-color: #b4ada9;
+}
+.table-registerAll button {
+  color: #fff;
+}
+/* ログインエラー
+----------------------- */
+.errorLogin h3 {
+  font-size: .5rem;
+}
+.errorLogin {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #faf7f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+.errorLogin h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+.top-main .restart {
+  width: 70%;
+  transition: .5s;
+}
+.top-main .restart:hover {
+  scale: 1.05;
+}
+
+/* デスクトップ
+----------------------- */
+@media (min-width: 800px) {
+  /* 見出し */
+  .page-title {
+    font-size: 5rem;
+  }
+  .heading-large {
+    font-size: 4rem;
+  }
+  .post-title {
+    font-size: 2rem;
+  }
+
+  /* ヘッダー */
+  .logo {
+    width: 88px;
+  }
+  .main-nav {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .page-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20rem;
+  }
+
+
+  /* ヘッダーカバー画像 */
+  .sub-cover {
+    height: 400px;
+    margin-bottom: 6rem;
+  }
+
+  /* HOME */
+  .page-title {
+    margin-top: .1rem;
+  }
+  .cover-home {
+    background-image: url(../images/desktop-top-home.svg);
+  }
+  .about {
+    margin: 4rem auto 5rem;
+  }
+
+  /* NEWS */
+  .cover-news {
+    background-image: url(../images/desktop-top.png);
+  }
+  .news-contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post {
+    width: 70%;
+  }
+  .sidebar {
+    width: 22%;
+  }
+  .sidebar .heading-medium {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  /* MENU */
+  .cover-menu {
+    background-image: url(../images/desktop-top-heruku.png);
+  }
+  .grid1 {
+    gap: 3rem 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .item img {
+    margin-bottom: 1rem;
+  }
+  .item p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+ /* MONSTER */
+ .cover-monster {
+   background-image: url(../images/desktop-top-amura.png);
+ }
+ .main-title {
+   font-size: 4rem;
+ }
+ .rank {
+   font-size: 3rem;
+   margin: 0.2rem 0 0.7rem;
+ }
+ .grid2 {
+   gap: 1.5rem 1rem;
+   grid-template-columns: repeat(5, 1fr);
+   text-align: center;
+ }
+ .item img {
+   height: 13rem;
+   width:13rem;
+ }
+
+ /* Blog */
+.cover-blog {
+  background-image: url(../images/desktop-top-dorago.png);
+}
+ /* SPEED */
+ .cover-speed {
+   background-image: url(../images/desktop-top-zyami.png);
+ }
+ .column h3 {
+   font-size: 2rem;
+ }
+ /* MONSTER EVALUATION */
+ .cover-monster-personal {
+   background-image: url(../images/desktop-top-sukadora.png);
+ }
+ .monster p {
+   font-size: 1.17rem;
+ }
+ .monster-name {
+   margin-top: 2rem;
+   font-size: 3rem;
+ }
+ .monster-name img {
+   height: 10rem;
+   width: 10rem;
+ }
+ .sub-title {
+   font-size: 1.7rem;
+   margin: 1.5rem 0;
+ }
+ .subsub-title {
+   font-size: 1.4rem;
+   margin: 1rem 0;
+ }
+ .total-table {
+   margin-bottom: 1rem;
+ }
+ .total-table th {
+   font-size: 1.3rem;
+   padding: .4rem;
+ }
+ .total-table td {
+   font-size: 1.3rem;
+   padding: .4rem;
+ }
+
+  /* CONTACT */
+  .cover-contact {
+    background-image: url(../images/cover-contact-l.webp);
+  }
+  .location {
+    display: flex;
+    gap: 2rem;
+  }
+  .location-info {
+    width: 32%;
+  }
+  .location-info .info th {
+    padding-left: 2rem;
+  }
+  .location-map {
+    width: 64%;
+  }
+  /* フッター */
+  .page-footer {
+    background-image: url(../images/desktop-footer.png);
+    height: 430px;
+  }
+  .info th {
+    padding-left: 2.5rem;
+  }
+
+  /* サブログ */
+  .cover-sublog {
+    background-image: url(../images/desktop-top-goremu.png);
+  }
+  .sublog {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    margin-bottom: 5rem;
+  }
+  /* 登録画面 */
+  .subscribe h3 {
+    font-size: 2rem;
+  }
+  .type input {
+    padding: .5rem;
+  }
+  /* EP6登録 */
+  .ep6Total h3 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .ep6Total h4 {
+    font-size: 2rem;
+  }
+  .top-main .btn {
+    width: 30%;
+    margin: .5rem;
+    background-color: #e7d0a9;
+    font-size: 1.7rem;
+  }
+  .top-button {
+    display: block;
+  }
+  /* スキル選択 */
+
+  .choice {
+    max-width: 600px;
+  }
+  .choice h3 {
+    font-size: 2.5rem;
+  }
+  .partChoice select {
+    width: 40%;
+  }
+  .input input {
+    width: 50%;
+    font-size: 1.8rem;
+  }
+
+  /* EP6登録完了 */
+  .complete {
+    max-width: 600px;
+  }
+  .complete h3 {
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .top-main .allRegister {
+    width: 90%;
+  }
+  /* 登録一覧 */
+  .top-registerAll h3 {
+    font-size: 2.7rem;
+  }
+  .top-registerAll .btn {
+    font-size: 1.5rem;
+    padding: .6rem;
+    margin-bottom: 1.8rem;
+  }
+  .btnUnity {
+    margin: 2rem 0;
+  }
+  .table-registerAll {
+    max-width: 1100px;
+    font-size: 1.4rem;
+    margin-bottom: 8rem;
+  }
+  .table-registerAll form {
+    font-size: 1.4rem;
+    padding: .1rem;
+    margin: .2rem;
+  }
+  /* ログインエラー */
+  .errorLogin {
+    max-width: 600px;
+    margin-bottom: 7rem;
+  }
+  .errorLogin h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.9rem;
+  }
+  .top-main .restart {
+    width: 40%;
+  }
