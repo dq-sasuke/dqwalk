@@ -186,27 +186,20 @@ iframe {
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
   margin-top: 5rem ;
-
 }
 
-.grid2 {
-  display: grid;
-  gap: 0.4rem 0.3rem;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: center;
-}
-.item {
+.item1 {
   transition: .5s;
 }
-.item:hover {
+.item1:hover {
   scale: 1.05;
 }
-.item img {
+.item1 img {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 16px;
 }
-.item p {
+.item1 p {
   font-size: .875rem;
   color: #432
 }
@@ -229,6 +222,22 @@ iframe {
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
 }
+.item2 {
+  transition: .5s;
+}
+.item2:hover {
+  scale: 1.05;
+}
+.item2 img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.item2 p {
+  font-size: .875rem;
+  color: #432
+}
+
 
 /* MONSTER EVALUATION
 -----------------------*/
@@ -806,13 +815,15 @@ iframe {
     background-image: url(../images/desktop-top-heruku.png);
   }
   .grid1 {
-    gap: 3rem 2rem;
+    gap: 2rem 1rem;
     grid-template-columns: repeat(4, 1fr);
   }
-  .item img {
+  .item1 img {
+    height: 16rem;
+    width:16rem;
     margin-bottom: 1rem;
   }
-  .item p {
+  .item1 p {
     font-size: 1rem;
     font-weight: bold;
   }
@@ -833,7 +844,7 @@ iframe {
    grid-template-columns: repeat(5, 1fr);
    text-align: center;
  }
- .item img {
+ .item2 img {
    height: 13rem;
    width:13rem;
  }
