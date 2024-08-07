@@ -370,6 +370,15 @@ iframe {
   font-size:1.3rem;
   margin-bottom: .2rem;
 }
+/* About me
+-----------------------*/
+.introduction h3{
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.introduction h4{
+  font-size: 1.2rem;
+}
 /* SPEED
 -----------------------*/
 .cover-speed {
@@ -441,6 +450,7 @@ iframe {
   background-position: center;
   padding: 1rem 0;
   margin-top: 5rem;
+  height: 700px;
   position: relative;
 }
 .info {
@@ -449,7 +459,7 @@ iframe {
   margin:auto;
   padding: 0 1.5rem;
   border-spacing: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 2.5rem;
 }
 .info th,.info td {
   border-bottom: 1px solid #c9c2bc;
@@ -464,6 +474,15 @@ iframe {
 }
  .twitter-follow-button{
   margin-top:.5rem;
+}
+.copyrightSq {
+  font-size: 1rem;
+  max-width: 300px;
+  margin: auto;
+}
+.copyrightSq h3{
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 .copyright {
   width: 100%;
@@ -744,7 +763,16 @@ iframe {
 .top-main .restart:hover {
   scale: 1.05;
 }
-
+/* プライバシーポリシー
+----------------------- */
+.unity h1{
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.unity h2{
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
 /* デスクトップ
 ----------------------- */
 @media (min-width: 800px) {
@@ -915,10 +943,19 @@ iframe {
   /* フッター */
   .page-footer {
     background-image: url(../images/desktop-footer.png);
-    height: 430px;
+    height: 730px;
   }
   .info th {
     padding-left: 2.5rem;
+  }
+  .copyrightSq {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  .copyrightSq h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
   /* サブログ */
@@ -1015,4 +1052,13 @@ iframe {
   }
   .top-main .restart {
     width: 40%;
+  }
+    /* プライバシーポリシー*/
+  .unity h1{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  .unity h2{
+    margin: 2rem 0;
+    font-size: 1.8rem;
   }
